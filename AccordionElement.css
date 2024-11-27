@@ -1,0 +1,33 @@
+.accordion{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap:1rem;
+    margin:3rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: justify;
+}
+.accordion-button{
+    padding: 1rem;
+}
+/* Media queries for desktop view*/
+@media(min-width:40rem){   
+    .accordion{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap:2rem;
+        background-color: white;
+        margin: 1rem;
+        text-align: justify;
+        padding-bottom: 4rem;
+    }
+    .accordion-button{
+        background-color: navy;
+        color: white;
+        display: flex;
+        flex-direction: row;
+     
+    }
+}    

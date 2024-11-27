@@ -1,0 +1,51 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+}
+.background-logo{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 15rem;
+    padding: 0.5rem;
+}
+.subheading{
+    text-align: center;
+    padding-top: 2rem;
+   /* position: relative;
+    top:1rem;
+    color: white; */
+}
+.paragraph{
+   font-family: sans-serif;
+   font-size: medium;
+   padding: 1rem; 
+   word-break: normal;
+   text-align: justify;
+}
+
+    
+/* Media queries for desktop view*/
+@media(min-width:40rem){
+    .background-logo{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 30rem;
+        padding: 0rem;
+    }   
+    .subheading{
+        text-align: center;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
+    .paragraph{
+        font-family: sans-serif;
+        font-size: medium;
+        padding: 1rem; 
+        word-break: normal;
+        text-align: justify;
+     }
+    }

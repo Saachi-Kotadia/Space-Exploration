@@ -1,0 +1,64 @@
+.dialogForm{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap:3rem;
+}
+.modal::backdrop {
+    background-color: rgb(0 0 0 / 0.7 );
+}
+.modal {     
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    width: 300px;
+    height: 150px;
+}
+
+.open{
+    grid-area: open;
+    border: transparent;
+    font-family: inherit;
+    font-size: 1rem;
+}
+.submitbutton1{
+    font-size: 1rem;
+    background-color: green;
+    color: black;
+    border: 1px solid black;
+    border-radius: 9px;
+    width:10rem;
+}
+.close{
+    font-size: 1rem;
+    background-color: red;
+    color: black;
+    border: 1px solid black;
+    border-radius: 9px;
+    width:10rem;
+}
+
+/*Attributes for highlighting when focus*/
+input:focus-visible {
+    border: 2px solid blue;
+}
+.open:hover{
+    background-color: #4E061B;
+}
+.close:hover{
+    background-color: blue;
+}
+.open:focus{
+    background-color: #4E061B;
+}
+.close:focus{
+    background-color: blue;
+}
+.submitbutton1:hover{
+    background-color: blue;
+}
+.submitbutton1:focus{
+    background-color: blue;
+}

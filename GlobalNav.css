@@ -1,0 +1,66 @@
+.global-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    background-color: #4E061B;
+    font-family: sans-serif;
+    }
+
+    .global-nav-link {
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    }
+    .global-nav-link:hover {
+    background-color: #210D90;
+    color: white;
+    cursor: pointer;
+    }
+    .global-nav-link:focus {
+        background-color: #210D90;
+        color: white;
+        text-decoration: underline;
+        cursor: pointer;
+        }
+    .global-nav-toggle{
+        background-color:#4E061B;
+        color: white;
+        cursor: pointer;
+    }
+    .global-nav-toggle:focus{
+        background-color:#210D90;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .global-nav-list-collapsed {
+        display: none;
+        }
+        
+
+    
+/* Media queries for desktop view*/
+@media(min-width:40rem){ 
+    .global-nav-toggle{
+        display: none;
+    }
+    .global-nav-list{
+        display: flex;
+        flex-direction: row;
+        position: static;
+    }
+    .global-nav-list-collapsed{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+}

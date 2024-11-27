@@ -1,0 +1,19 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+:root{
+  --color-page-bg:#F1DEDE;
+  --color-page-text:black;
+  --color-header-bg:burlywood;
+  --color-header-text:black;
+}
+body{
+  margin:0;
+  background-color: var(--color-page-bg);
+  color: var(--color-page-text);
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+input, select,textarea{
+  font:inherit;
+}

@@ -1,0 +1,36 @@
+.header{
+    display: grid;
+    grid-template-areas: 
+    "header-logo header-title"
+    "header-nav header-nav";
+    grid-template-columns: auto 1fr;
+    background-color: black;
+    color: white;
+}
+.logo-picture{
+    grid-area: header-logo;
+    width:130px;
+    height: 125px;
+    border-radius: 20%;
+}
+.header-title{
+    grid-area: header-title;
+    text-align: center;
+    align-self: center;
+}
+
+.header-nav{
+    grid-area: header-nav;
+    background-color: #4E061B;
+}
+
+/*Media queries for desktop view*/
+@media(min-width:40rem){ 
+.logo-picture{
+    grid-area: header-logo;
+    width:auto;
+    height: 125px;
+}
+
+}
+

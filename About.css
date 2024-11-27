@@ -1,0 +1,21 @@
+/*.backdrop-picture{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+.about{
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    align-self: auto;
+    margin: 0px;
+    background-color: #EAD9C8;
+    color: black;
+    width: auto;
+  
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  
+}

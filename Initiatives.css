@@ -1,0 +1,9 @@
+.initiatives{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*margin: 3rem;
+    padding: 1rem;
+    */
+    background-color: white;
+}

@@ -1,0 +1,70 @@
+.complex-form{
+    display: flex;
+    flex-direction: column;
+   /* min-height: 100vh; */
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+}
+
+.button-styling{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cancelbutton{
+    width: 4rem;
+    background-color: red;
+    color: black;
+}
+.submitbutton{
+    width: 4rem;
+   
+}
+.error-message{
+    color: red;
+    padding: 0.5rem;
+    font-style: italic;
+}
+
+input:focus-visible {
+    border: 2px solid blue;
+}
+
+.input:focus{
+    border:2px solid blue;
+}
+.input:hover{
+    border:3px solid blue;
+}
+.dropdown:focus-within{
+    border:3px solid blue;
+
+}
+.dropdown:focus-visible{
+    border:3px solid blue;
+}
+.submitbutton:hover{
+    width: 4rem;
+    background-color: papayawhip;
+    color: black;
+}
+.submitbutton:focus{
+    width: 4rem;
+    background-color: papayawhip;
+    color: black;
+}
+/* Media queries for desktop view*/
+@media(min-width:40rem){ 
+.complex-form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    height:auto;
+    width: auto;
+}
+}

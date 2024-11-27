@@ -1,0 +1,63 @@
+.panel{
+    background-color: white;
+    /*height: 10rem;*/
+}
+.logo-animation{
+    padding-top: 0.5rem;
+    position: relative;
+}
+.first-flight-button{
+    text-align: center;
+    color: navy;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.logo-move{
+    height: 100px;
+    width: auto;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+
+@media (prefers-reduced-motion:no-preference){
+.logo-move {
+    display: inline-block;
+    
+    background-color: green;
+    }
+    .logo-animation:hover .logo-move {
+    animation-name: bounce; /* our defined keyframe (coming)*/
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /* animation: bounce 2s infinite alternate; */
+    }
+    
+    @keyframes bounce {
+        from { /* starting values */
+        margin-left: 0%;
+        }
+        50% {
+        background-color: red; /* changing it up! */
+        }
+        to {
+        margin-left: calc( 100% - 3rem); /* end values */
+        }
+        
+    }
+/* Media queries for desktop view*/
+@media(min-width:40rem){   
+    .logo-move{
+        height: 100px;
+        width: auto;
+        border-radius: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+}}

@@ -1,0 +1,133 @@
+.Panel-cards1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  /*  padding: 1rem;
+    margin: 1rem;  */
+
+    background-color:#210D90;
+    color: white;
+}
+.Panel-cards2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  /*  padding: 1rem;
+    margin: 1rem;  */
+    background-color:whitesmoke;
+}
+.Panel-cards3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  /*  padding: 1rem;
+    margin: 1rem;  */
+    background-color:#F1E4E8;
+}
+
+
+.panel-title{
+    grid-area: panel-logo;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+}
+
+.panel-text{
+    grid-area: panel-text;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: justify;
+
+}           
+.panel-logo1{
+    height: 125px;
+    width: auto;
+    margin: 1rem;
+    border: 1px solid white;
+    align-items: center;
+}
+.panel-logo2{
+    height: 125px;
+    width: auto;
+    margin: 1rem;
+    border: 1px solid black;
+    align-items: center;
+}
+.panel-logo3{
+    height: 125px;
+    width: auto;
+    margin: 1rem;
+    border: 1px solid white;
+    align-items: center;
+}
+
+   
+/* Media queries for desktop view*/
+@media(min-width:40rem){ 
+    .Panel-cards1{
+        display: grid;
+        grid-template-areas: 
+        "panel-logo panel-title"
+        "panel-text panel-text";
+        grid-template-columns: auto 1fr;    
+        background-color:#210D90;
+        color: white;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+         
+    .Panel-cards2{
+        display: grid;
+        grid-template-areas: 
+        "panel-logo panel-title"
+        "panel-text panel-text";
+        grid-template-columns: auto 1fr;      
+        background-color:white;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .Panel-cards3{
+        display: grid;
+        grid-template-areas: 
+        "panel-logo panel-title"
+        "panel-text panel-text";
+        grid-template-columns: auto 1fr;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color:#F1E4E8;
+    }
+
+    @media (prefers-reduced-motion:no-preference){
+        .Panel-cards1:hover{
+            box-shadow: 10px 12px 2px 1px rgba(0, 0, 255, .2);
+            transform: translateY(-10rem);
+            rotate: (3deg);
+            transform: scale(1.02);
+            transition:1s;
+        }
+        .Panel-cards2:hover{
+            box-shadow: 10px 12px 2px 1px rgba(0, 0, 255, .2);
+            transform: translateY(-10rem);
+            rotate: (3deg);
+            transform: scale(1.02);
+            transition:1s;
+        }
+        .Panel-cards3:hover{
+            box-shadow: 10px 12px 2px 1px rgba(0, 0, 255, .2);
+            transform: translateY(-10rem);
+            rotate: (3deg);
+            transform: scale(1.02);
+            transition:1s;
+        }
+    }
+   
+      
+}

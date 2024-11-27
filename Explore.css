@@ -1,0 +1,55 @@
+.explore{
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    align-self: auto;
+    margin: 0px;
+    background-color: #F1E4E8;
+    color: black;
+    width: auto;
+  
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  
+}
+
+
+.explore-galaxy-image{
+    height: 10rem;
+    width: auto;
+    padding-bottom: 2rem;
+
+}
+.submission-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:1rem;
+    margin:1rem;
+}
+
+
+/* Media queries for desktop view*/
+@media(min-width:40rem){   
+    
+
+.explore-galaxy-image{
+    height: 27rem;
+    width: auto;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+}
+.spacing{
+    background-color: #EAD9C8;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    color:black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+}
